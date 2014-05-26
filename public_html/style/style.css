@@ -1,0 +1,172 @@
+body 
+{
+	background-image : url('../image/ECommerce.jpg');
+	margin-right:0%;
+	margin-top:1%;
+	margin-left:5%;
+	margin-bottom:1%;
+	padding:3%;
+	overflow: auto;
+	z-index: 80;
+}
+
+div.containall
+{
+	position:absolute;
+	padding:5px;
+	width : 1200px;
+	height : 700px;
+	text-align: left;  
+}
+
+div.welcome
+{
+	position:relative;
+	padding:5px;
+	bottom:1px;
+	margin-top:290px;
+	margin-left:250px;
+	margin-bottom:5px;
+	margin-right:5px;
+	min-height:200px;
+	height:".$hauteur."px;
+	width: 940px;
+	border:1px solid black;
+	background-color:#EFFBF5;
+	z-index:51;
+}
+
+div.welcomeUser
+{
+	position:absolute;
+	padding:5px;
+	bottom:1px;
+	margin-top:5px;
+	margin-left:650px;
+	margin-bottom:200px;
+	margin-right:5px;
+	color:#C4D7ED;
+	z-index:52;
+}
+
+div.panierUser
+{
+	position:absolute;
+	padding:5px;
+	bottom:1px;
+	margin-top:5px;
+	margin-left:50px;
+	margin-bottom:130px;
+	margin-right:5px;
+	z-index:52;
+}
+
+div.titre_haut_gauche
+{
+	position:absolute;
+	border:1px solid black;
+	background-color:#C4D7ED;
+	padding:5px;
+	margin-top:0px;
+	margin-left:0px;
+	margin-bottom:5px;
+	margin-right:5px;
+	text-align:center;
+	height : 250px;
+	width : 290px;
+}
+
+div.menu_haut_droite
+{
+	position:absolute;
+	border:1px solid black;
+	border-radius: 30px;
+	background-image : url('../image/course.jpg');
+	background-position:center;
+	padding:5px;
+	margin-top:0px;
+	margin-left:330px;
+	margin-bottom:5px;
+	margin-right:5px;
+	height : 250px;
+	width : 860px;
+}
+
+
+div.menu
+{
+	position:absolute;
+	border:1px solid black;
+	border-radius: 30px;
+	padding:10px;
+	margin-top:290px;
+	margin-left:0px;
+	margin-bottom:5px;
+	margin-right:5px;
+	text-align:center;
+	font-size:16px;
+	min-height:".$hauteur."px;
+	width:200px;
+	background-color:white;
+	z-index:50;
+}
+
+div.pied_de_page
+{
+	position:relative;
+	padding:5px;
+	bottom:1px;
+	margin-top:20px;
+	margin-left:0px;
+	margin-bottom:5px;
+	margin-right:5px;
+	min-height:".$hauteur."px;
+	width:1190px;
+	border:1px solid black;
+	background-color:#C4D7ED;
+	z-index:52;
+}
+
+h1
+{
+	color:White;
+	text-align:center;
+        font-size:28px;
+}
+
+h2
+{
+	text-align:center;
+        font-size:22px;
+}
+
+h3
+{
+	color:#1C1C1C;
+	font-family:"Times New Roman";
+	font-size:16px;
+}
+
+p
+{
+	font-family:"Times New Roman";
+	font-size:18px;
+}
+
+.col 
+{
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after 
+{
+	clear:both;
+}
