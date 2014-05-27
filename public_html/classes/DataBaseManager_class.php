@@ -21,7 +21,7 @@
 			try
 			{
 				self::$lienBDD = mysqli_init();
-				mysqli_real_connect(self::$lienBDD, "localhost", "root", "", "dbjepoinas")
+				mysqli_real_connect(self::$lienBDD, "localhost", "root", "root", "dbjepoinas")
 				or die ("Impossible de se connecter &agrave; mysql (base de donn&eacute;es bdd) :
 				".mysqli_error(self::$lienBDD));
 			}
