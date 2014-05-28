@@ -24,12 +24,12 @@
 	function presentation()
 	{
 		echo'
-			<div class="containall">
-				<div class="titre_haut_gauche">
+			<div class="containall"></div>
+				<span class="titre_haut_gauche">
 					<h1><br/>E-Commerce de proximit&eacute;<br/> - <br/>Livraison express</h1><br/>
-				</div>
-			</div>';
-		echo'<div class="menu_haut_droite">';
+				</span>
+			';
+		echo'<span class="menu_haut_droite">';
 				$display = isset($_SESSION['id']) ? $_SESSION['id'] : false;
 				if($display==true)
 				{
@@ -45,7 +45,7 @@
 				{
 					session_unset("id");
 				}
-		echo'</div>';	
+		echo'</span>';	
 	}
 	
 	function menu()
