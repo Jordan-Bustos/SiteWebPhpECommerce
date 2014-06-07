@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Dim 25 Mai 2014 à 22:22
+-- Généré le :  Ven 06 Juin 2014 à 07:30
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `membre` (
   `numTel` varchar(10) NOT NULL,
   `privilege` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Contenu de la table `membre`

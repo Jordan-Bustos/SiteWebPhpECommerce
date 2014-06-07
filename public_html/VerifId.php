@@ -6,7 +6,7 @@
 		$privilege="utilisateur";
 		$co = DataBaseManager::getInstance();
 		$count=0;
-		$req = $co->execRequete("SELECT nom,privilege FROM Membre WHERE nom='$id'AND mdp='$mdp'");
+		$req = $co->execRequete("SELECT nom,privilege FROM membre WHERE nom='$id'AND mdp='$mdp'");
 		while ($donnees = mysqli_fetch_assoc($req)) 
 		{
 			$id = $donnees["nom"];

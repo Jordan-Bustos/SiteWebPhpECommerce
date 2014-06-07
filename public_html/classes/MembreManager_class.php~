@@ -10,7 +10,7 @@
 		{
 			$co = DataBaseManager::getInstance();
                         
-                        $request = "INSERT INTO membre VALUES (
+                        $request = "INSERT INTO Membre VALUES (
 			'".$co->protegerString($membre->getId())."',
 			'".$co->protegerString($membre->getNom())."',
 			'".$co->protegerString($membre->getPrenom())."',
@@ -27,7 +27,7 @@
 		{
 			$co = DataBaseManager::getInstance();
                         
-            $request = "INSERT INTO produit VALUES (
+            $request = "INSERT INTO Produit VALUES (
 			'".$co->protegerString($produit->getNom())."',
 			'".$co->protegerString($produit->getPrix())."',
 			'".$co->protegerString($produit->getCategorie())."',
@@ -51,7 +51,7 @@
 		public static function afficherListeMembres()
 		{
 			$co = DataBaseManager::getInstance();
-			$req = $co->execRequete("SELECT m.* FROM membre m ORDER BY m.nom");
+			$req = $co->execRequete("SELECT m.* FROM Membre m ORDER BY m.nom");
 			$err = "";
 			while ($donnees = mysqli_fetch_assoc($req))
 			{
@@ -68,7 +68,7 @@
 		{
 			$co = DataBaseManager::getInstance();
 			$result = mysqli_fetch_row($co->execRequete("SELECT COUNT(id) FROM
-			membre WHERE nom = '".$co->protegerString($m->getNom())."' AND prenom =
+			Membre WHERE nom = '".$co->protegerString($m->getNom())."' AND prenom =
 			'".$co->protegerString($m->getPrenom())."'"));
 			return ($result[0] != 0);
 		}
